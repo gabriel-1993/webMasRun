@@ -168,6 +168,7 @@ body {
 .ic2 {
   background-image: url(./assets/img/img2.jpg);
   background-size: cover;
+  background-position: center;
 }
 .ic3 {
   background-image: url(./assets/img/img3.jpg);
@@ -182,13 +183,13 @@ body {
 .ic5 {
   background-image: url(./assets/img/img5.jpg);
   background-size: cover;
-  background-position: center;
+  background-position: right;
 }
 .ic6 {
   background-image: url(./assets/img/img6.jpg);
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
-  background-position: left;
+  background-position: bottom;
 }
 .ic7 {
   background-image: url(./assets/img/img7.jpg);
@@ -265,4 +266,168 @@ body {
   font-weight: 600;
   letter-spacing: 1px;
   background-color: var(--naranja);
+}
+
+/* *************************************     HTML DEL LOGIN  **********************************  */
+.section-login {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.divcontenedorlogin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: min(90%, 500px);
+  width: min(70%, 1000px);
+  background-image: linear-gradient(
+    to bottom,
+    rgb(235, 226, 226, 0.4),
+    rgba(212, 205, 205, 0.4)
+  );
+}
+
+/* -------- INICIAR SESION ------- */
+.divIniciar {
+  padding-top: 50px;
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  gap: 20px;
+  border-right: solid 2px var(--color4);
+}
+
+.divIniciar div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+/* DIV:USUARIO CONTRASEÑA */
+.divIniciar div div {
+  width: min(70%, 600px);
+}
+.divIniciar h2 {
+  color: var(--blanco);
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+.btn-contraseña {
+  padding: 6px 15px;
+  border-radius: 6px;
+  border: solid var(--blanco) 1px;
+  background-color: hsl(0, 0%, 100%, 0.1);
+  color: var(--blanco);
+  font-size: 0.8rem;
+  font-weight: 300;
+}
+
+.btn-Iniciar {
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 6px 25px;
+  color: var(--blanco);
+  background: var(--amarillo);
+  border: none;
+  border-radius: 7px;
+  letter-spacing: 4px;
+}
+
+/*--------- REGISTRARSE -----------*/
+
+.divRegistrarse h2 {
+  color: var(--blanco);
+  font-weight: 600;
+  font-size: 2rem;
+  text-align: center;
+}
+
+/* INPUTS REGISTRARSE */
+.divRegistrarse {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 8px;
+  padding: 40px 0;
+}
+
+.divRegistrarse div {
+  width: 70%;
+}
+/* input para que el usuario ingrese datos */
+.registrarse {
+  width: 100%;
+  padding: 7px;
+  border: solid 2px var(--color4);
+  background-color: var(--blanco);
+  color: var(--blanco);
+  letter-spacing: 3px;
+  border-radius: 8px;
+}
+
+.div-label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 9px;
+}
+
+.label-registrarse {
+  font-size: 14px;
+  font-weight: 300;
+  color: var(--blanco);
+}
+#checkbox1:hover {
+  cursor: pointer;
+}
+
+.submit-registro,
+.btn-Iniciar {
+  padding: 6px 20px;
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--blanco);
+  background-color: var(--amarillo);
+  border: none;
+  border-radius: 7px;
+  letter-spacing: 4px;
+  cursor: pointer;
+}
+
+/* ------------------------------------------    Footer    -------------------------------------- */
+
+footer {
+  height: 90px;
+  width: 100%;
+  background-color: var(--color6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(32, 100%, 49%, 0.3);
+  text-align: center;
+}
+
+footer p {
+  color: var(--color4);
+  font-size: 18px;
+  font-weight: 500;
+}
+
+footer span {
+  color: #ff6347;
+  font-weight: 800;
 }

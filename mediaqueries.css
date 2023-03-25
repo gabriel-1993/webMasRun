@@ -6,11 +6,88 @@
   --celeste: hsl(233, 8%, 79%);
 }
 
+@media (max-width: 992px) {
+  /*---------------------------------------     USUARIOS  login.html    --------------------------------------*/
+  .section-login {
+    overflow: auto;
+  }
+  .divcontenedorlogin {
+    width: min(70%, 1000px);
+    height: min(90%, 500px);
+    flex-direction: column;
+    overflow: auto;
+  }
+
+  /* -------- INICIAR SESION ------- */
+  .divIniciar {
+    text-align: center;
+    height: 50%;
+    width: min(100%, 500px);
+    gap: 15px;
+    border-right: none;
+    padding-bottom: 35px;
+    justify-content: center;
+    align-items: center;
+    border-right: solid 2px var(--color4);
+  }
+
+  .divIniciar div {
+    gap: 8px;
+  }
+
+  .divIniciar h2 {
+    font-size: 1.5rem;
+  }
+
+  .btn-Iniciar {
+    font-size: 0.9rem;
+    padding: 8px 50px;
+  }
+
+  /*--------- REGISTRARSE -----------*/
+
+  .divRegistrarse h2 {
+    font-size: 1.5rem;
+  }
+
+  /* INPUTS REGISTRARSE */
+  .divRegistrarse {
+    height: 50%;
+    width: min(100%, 500px);
+  }
+
+  .divRegistrarse div {
+    min-width: (60%, 300px);
+  }
+  .registrarse {
+    padding: 4px;
+    letter-spacing: 1px;
+  }
+
+  .label-registrarse {
+    font-size: 0.8rem;
+    width: 100%;
+  }
+
+  .submit-registro {
+    text-align: center;
+    padding: 9px 50px;
+    font-size: 0.8rem;
+  }
+}
+
 /* **************************************************************************************************** */
 @media (max-width: 768px) {
   /*  Logo a la izquierda del header **/
-  .wHeader {
-    height: 40%;
+  .logoHeader {
+    height: 60%;
+  }
+  .menu-icon1 {
+    height: 50%;
+  }
+  /* La mejor calidad en calzados */
+  .imgHome h2 {
+    font-size: 3.5rem;
   }
 
   /* menu que se muestra debajo del header para menu hamburguesa */
@@ -51,100 +128,43 @@
   .open-menu {
     display: flex;
   }
-
-  header {
-    width: auto;
-    justify-content: space-between;
-    padding: 0px 20px;
-  }
-  .divContUp {
+  /* cards individuales de productos */
+  /* cards */
+  .card {
+    width: min(350px, 95%);
+    height: 300px;
+    border: solid 2px white;
+    border-radius: 4px;
     display: flex;
     flex-direction: column;
-    width: 95%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: hsl(32, 100%, 49%, 0.3);
   }
-  .div1 {
+  .imgCard {
     width: 100%;
-  }
-  /* cambio imagen a mobile */
-  .div1__img {
-    background-image: url(./frontendMentor/assets/images/image-web-3-mobile.jpg);
-  }
-  /* div del texto en columna */
-  .div1__text {
-    flex-direction: column;
-  }
-  /* agrego width al h1 estaba en 50% */
-  .div1__h1,
-  .div1__h1 h1 {
-    width: 100%;
-  }
-  /* agrego width al P estaba en 50% */
-  .div1__p,
-  .div1__p p {
-    width: 100%;
-  }
-  button {
-    margin: 20px 0px;
-    width: 55%;
+    height: 270px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
   }
 
-  .div2 h2 {
-    text-align: unset;
-    margin-bottom: 10px;
-  }
-
-  .divCardsNew {
-    flex-direction: column;
-    padding: 0px;
-  }
-  .divCardsNew div {
-    width: 100%;
-    padding: 34px;
-    height: auto;
-    align-items: unset;
-  }
-  /* titulo de las cardsNew */
-  .divCardsNew div h4 {
-    font-size: 1.3rem;
-    text-align: unset;
-  }
-  /* p de las cards lado azul oscuro */
-  .div2 div p {
-    text-align: unset;
-    font-size: 1rem;
-  }
-
-  .divBorder {
-    border-top: solid 1px var(--azul1);
-    border-bottom: solid 1px var(--azul1);
-    border-left: none;
-    border-right: none;
-  }
-
-  /* contenedor 3 cards 01 02 03 */
-  .divContDown {
-    margin-top: 12px;
-    flex-direction: column;
-    gap: 15px;
-    width: 95%;
-  }
-  .cardDown {
-    width: 100%;
-    height: 150px;
-  }
-
-  /*01 02 03 de cada cards  */
-  .divContDown .cardDown .textCard span {
-    font-size: 1.7rem;
-  }
   .textCard {
-    justify-content: space-around;
-    gap: 2px;
+    justify-content: space-between;
+    width: 90%;
   }
-  .textCard h4 {
-    font-size: 1rem;
+
+  /* -----------------------------------------------     FOOTER     ----------------------------------------- */
+
+  footer p {
+    font-size: 16px;
   }
-  .textCard p {
-    line-height: 22px;
+
+  /* *************************      Login registro ************************ */
+  /* quitar el borde del medio en horizontal,
+  cuando pase a vertical */
+  .divIniciar {
+    border-right: none;
+    padding: 30px;
+    padding-bottom: 0px;
   }
 }
