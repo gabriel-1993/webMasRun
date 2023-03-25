@@ -1,0 +1,150 @@
+:root {
+  --naranja: #fb8500;
+  --amarillo: #fee440;
+  --rojo: hsl(5, 85%, 63%);
+  --blanco: hsl(36, 100%, 99%);
+  --celeste: hsl(233, 8%, 79%);
+}
+
+/* **************************************************************************************************** */
+@media (max-width: 768px) {
+  /*  Logo a la izquierda del header **/
+  .wHeader {
+    height: 40%;
+  }
+
+  /* menu que se muestra debajo del header para menu hamburguesa */
+  .navbar-list {
+    position: absolute;
+    top: 65px;
+    left: 46%;
+    right: 46%;
+    width: 55%;
+    height: 100%;
+    flex-direction: column;
+    background-color: var(--amarillo);
+    align-items: flex-start;
+    padding: 20px 30px;
+    gap: 35px;
+    z-index: 2;
+    display: none;
+  }
+  /* color para los enlaces  */
+  .navbar-list a {
+    font-size: 23px;
+    letter-spacing: 2px;
+    font-weight: 900;
+    color: var(--naranja);
+  }
+
+  /* Mostramos el icono del menu div contenedor */
+  .activo {
+    display: flex;
+    order: 2;
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+    margin-top: 9px;
+  }
+
+  /* menu hamburguesa, le quitamos el none aplicado en desktop para mostrarlo*/
+  .open-menu {
+    display: flex;
+  }
+
+  header {
+    width: auto;
+    justify-content: space-between;
+    padding: 0px 20px;
+  }
+  .divContUp {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+  }
+  .div1 {
+    width: 100%;
+  }
+  /* cambio imagen a mobile */
+  .div1__img {
+    background-image: url(./frontendMentor/assets/images/image-web-3-mobile.jpg);
+  }
+  /* div del texto en columna */
+  .div1__text {
+    flex-direction: column;
+  }
+  /* agrego width al h1 estaba en 50% */
+  .div1__h1,
+  .div1__h1 h1 {
+    width: 100%;
+  }
+  /* agrego width al P estaba en 50% */
+  .div1__p,
+  .div1__p p {
+    width: 100%;
+  }
+  button {
+    margin: 20px 0px;
+    width: 55%;
+  }
+
+  .div2 h2 {
+    text-align: unset;
+    margin-bottom: 10px;
+  }
+
+  .divCardsNew {
+    flex-direction: column;
+    padding: 0px;
+  }
+  .divCardsNew div {
+    width: 100%;
+    padding: 34px;
+    height: auto;
+    align-items: unset;
+  }
+  /* titulo de las cardsNew */
+  .divCardsNew div h4 {
+    font-size: 1.3rem;
+    text-align: unset;
+  }
+  /* p de las cards lado azul oscuro */
+  .div2 div p {
+    text-align: unset;
+    font-size: 1rem;
+  }
+
+  .divBorder {
+    border-top: solid 1px var(--azul1);
+    border-bottom: solid 1px var(--azul1);
+    border-left: none;
+    border-right: none;
+  }
+
+  /* contenedor 3 cards 01 02 03 */
+  .divContDown {
+    margin-top: 12px;
+    flex-direction: column;
+    gap: 15px;
+    width: 95%;
+  }
+  .cardDown {
+    width: 100%;
+    height: 150px;
+  }
+
+  /*01 02 03 de cada cards  */
+  .divContDown .cardDown .textCard span {
+    font-size: 1.7rem;
+  }
+  .textCard {
+    justify-content: space-around;
+    gap: 2px;
+  }
+  .textCard h4 {
+    font-size: 1rem;
+  }
+  .textCard p {
+    line-height: 22px;
+  }
+}

@@ -1,0 +1,268 @@
+/* font-family: 'Bebas Neue', cursive */
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+:root {
+  --naranja: #fb8500;
+  --amarillo: #fee440;
+  --rojo: hsl(5, 85%, 63%);
+  --blanco: hsl(36, 100%, 99%);
+  --celeste: hsl(233, 8%, 79%);
+  --azul1: hsl(236, 13%, 42%);
+  --azul2: #00001a;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+  list-style: none;
+  border: none;
+}
+
+header {
+  height: 75px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--naranja);
+  padding: 0px 20px;
+}
+/* MENU HAMBURGUESA Ocultar en Desktop  */
+
+.menu-icon1 {
+  display: none;
+}
+
+.navbar-list {
+  display: flex;
+  gap: 25px;
+}
+nav a {
+  cursor: pointer;
+  color: var(--blanco);
+  font-size: 15px;
+  font-weight: 400;
+}
+nav a:hover {
+  color: var(--azul2);
+}
+/*GLASMORPHISM:
+  Fondo semitransparente que
+  añade un difuminado al fondo del div en el que se aplique. En este caso, lo usamos para que al abrir el menú
+  hamburguesa lo demás de la página se vea borroso abajo de este div de clase overlay.
+  */
+
+.overlay {
+  position: absolute;
+  top: 65px;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: 1; /*Para que quede por encima del resto de las cosas*/
+
+  /*Efecto de Glassmorphismo*/
+  background: --azul1, 0.5;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  display: none;
+}
+
+/*Toggle para el overlay (para que funcione unicamente cuando abrimos carrito o menu hamburguesa.
+    Aclarar que funciona porque son elementos hermanos y overlay esta debajo de los dos inputs en el código.*/
+.show-overlay {
+  display: block;
+}
+
+/* *******************************************contenedor general luego del header */
+body {
+  background: linear-gradient(to bottom, var(--naranja), var(--amarillo));
+}
+#home {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 55px;
+}
+
+/* div contenedor de la imagen grande y el h2  */
+.imgHome {
+  margin-top: 50px;
+  min-height: 100vh;
+  width: 90%;
+  background-image: url(./assets/img/img1.png);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+}
+
+/* h2 dentro de la imagen principal  */
+.imgHome h2 {
+  margin-top: 20px;
+  color: var(--amarillo);
+  font-family: "Bebas Neue", cursive;
+  letter-spacing: 3px;
+  font-size: 5rem;
+  text-align: center;
+  justify-content: center;
+  width: 90%;
+}
+/* imagen pricipal home  */
+.img1 {
+  height: 100vh;
+  border: white 2px solid;
+}
+
+/* section contenedor de productos  */
+#products {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0px;
+}
+#products h4 {
+  color: var(--blanco);
+  font-size: 2.6rem;
+  letter-spacing: 2px;
+  font-family: "Bebas Neue", cursive;
+}
+/* div contenedor de productos  */
+.contenedorProd {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+/* cards */
+.card {
+  width: 350px;
+  height: 128px;
+  border: solid 2px white;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: hsl(32, 100%, 49%, 0.3);
+}
+.imgCard {
+  width: 130px;
+  height: 124px;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+.ic1 {
+  background-image: url(./assets/img/img1.png);
+  background-size: cover;
+  background-position: left;
+}
+.ic2 {
+  background-image: url(./assets/img/img2.jpg);
+  background-size: cover;
+}
+.ic3 {
+  background-image: url(./assets/img/img3.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.ic4 {
+  background-image: url(./assets/img/img4.jpg);
+  background-size: cover;
+  background-position: left;
+}
+.ic5 {
+  background-image: url(./assets/img/img5.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.ic6 {
+  background-image: url(./assets/img/img6.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+.ic7 {
+  background-image: url(./assets/img/img7.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.ic8 {
+  background-image: url(./assets/img/img8.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.ic9 {
+  background-image: url(./assets/img/img9.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.ic10 {
+  background-image: url(./assets/img/img10.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.ic11 {
+  background-image: url(./assets/img/img11.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.ic12 {
+  background-image: url(./assets/img/img12.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.textCard {
+  height: 120px;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 4px;
+}
+
+.h3Cate {
+  color: orangered;
+}
+
+.spanGene {
+  color: white;
+  font-weight: 800;
+}
+.pStock {
+  color: white;
+  font-size: 14px;
+  font-weight: 400;
+}
+.divBtnPrecio {
+  display: flex;
+  justify-content: space-between;
+}
+.spanPrecio {
+  color: var(--blanco);
+  font-weight: 900;
+}
+.btn-info {
+  padding: 4px 12px;
+  width: 90px;
+  border-radius: 4px;
+  border: solid 1px #fff;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 1px;
+  background-color: var(--naranja);
+}
