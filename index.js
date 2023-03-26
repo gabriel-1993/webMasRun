@@ -50,9 +50,9 @@ const cambiarLogo = () => {
 
 // puerta de entrada
 const init = () => {
+  abrirMenu.addEventListener("click", cambiarLogo);
   barsMenu.addEventListener("click", closeOnClick);
   window.addEventListener("scroll", closeMenuOnScroll);
   overlay.addEventListener("click", closeMenuOnClickOut);
-  abrirMenu.addEventListener("click", cambiarLogo);
 };
 init();
