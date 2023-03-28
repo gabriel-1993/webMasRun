@@ -278,11 +278,11 @@ body {
 }
 
 .spanGene {
-  color: white;
+  color: var(--blanco);
   font-weight: 800;
 }
 .pStock {
-  color: white;
+  color: var(--blanco);
   font-size: 14px;
   font-weight: 400;
 }
@@ -298,11 +298,17 @@ body {
   padding: 4px 12px;
   width: 90px;
   border-radius: 4px;
-  border: solid 1px #fff;
-  color: #fff;
+  border: solid 1.6px var(--blanco);
+  color: var(--blanco);
   font-weight: 600;
   letter-spacing: 1px;
   background-color: var(--naranja);
+  cursor: pointer;
+}
+.btn-info:hover {
+  border: 1.6px solid orangered;
+  color: var(--blanco);
+  font-weight: 700;
 }
 
 /* *************************************     HTML DEL LOGIN  **********************************  */
