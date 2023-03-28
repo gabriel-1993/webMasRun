@@ -12,7 +12,6 @@ const overlay = document.querySelector(".overlay");
 const logoResponsive = document.querySelector(".menu-icon1");
 // Logo menu responsive X para cerrarlo
 const logoResponsiveX = document.querySelector(".menu-icon2");
-
 const carouselImages = document.querySelector(".imgHome");
 const prevBtn = document.querySelector(".anterior");
 const nextBtn = document.querySelector(".siguiente");

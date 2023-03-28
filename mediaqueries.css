@@ -79,15 +79,39 @@
 /* **************************************************************************************************** */
 @media (max-width: 768px) {
   /*  Logo a la izquierda del header **/
+  header {
+    height: 50px;
+  }
   .logoHeader {
     height: 60%;
   }
-  .menu-icon1 {
-    height: 50%;
+
+  #home {
+    height: 50vh;
   }
   /* La mejor calidad en calzados */
-  .imgHome h2 {
-    font-size: 3.5rem;
+  #home h2 {
+    font-size: 2.7rem;
+  }
+
+  /* div de las imagenes */
+  .imgHome {
+    height: 60vh;
+  }
+  /* cada img en el carrousel */
+  .imgCarrousel {
+    height: 60vh;
+  }
+  .carrusel-botones {
+    width: 100%;
+    bottom: 270px;
+  }
+  /* botones carrousel */
+  .anterior,
+  .siguiente {
+    border-radius: 10px;
+    font-size: 0.7rem;
+    padding: 1px 15px;
   }
 
   /* menu que se muestra debajo del header para menu hamburguesa */
@@ -119,8 +143,8 @@
     display: flex;
     order: 2;
     cursor: pointer;
-    height: 40px;
-    width: 40px;
+    height: 24px;
+    width: 24px;
     margin-top: 9px;
   }
 
