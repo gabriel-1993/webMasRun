@@ -333,6 +333,7 @@ body {
     rgb(235, 226, 226, 0.4),
     rgba(212, 205, 205, 0.4)
   );
+  box-shadow: 7px 7px 15px rgba(168, 166, 166, 0.6);
 }
 
 /* -------- INICIAR SESION ------- */
