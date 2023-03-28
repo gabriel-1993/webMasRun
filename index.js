@@ -13,6 +13,11 @@ const logoResponsive = document.querySelector(".menu-icon1");
 // Logo menu responsive X para cerrarlo
 const logoResponsiveX = document.querySelector(".menu-icon2");
 
+const carouselImages = document.querySelector(".imgHome");
+const prevBtn = document.querySelector(".anterior");
+const nextBtn = document.querySelector(".siguiente");
+let counter = 0;
+
 // funcion para cerrar el Menu responsive y remover el difuminado de fondo ,al hacer click unicamente en algun enlace
 const closeOnClick = (e) => {
   if (!e.target.classList.contains("navbar-link")) {
@@ -47,6 +52,26 @@ const cambiarLogo = () => {
     abrirMenu.src = "./assets/img/icon-menu.png";
   }
 };
+
+nextBtn.addEventListener("click", () => {
+  if (counter < 3) {
+    counter++;
+    carouselImages.style.transform = `translateX(-${counter * 25}%)`;
+  } else {
+    counter = 0;
+    carouselImages.style.transform = "translateX(0)";
+  }
+});
+
+prevBtn.addEventListener("click", () => {
+  if (counter > 0) {
+    counter--;
+    carouselImages.style.transform = `translateX(-${counter * 25}%)`;
+  } else {
+    counter = 3;
+    carouselImages.style.transform = "translateX(-75%)";
+  }
+});
 
 // puerta de entrada
 const init = () => {

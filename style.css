@@ -15,7 +15,6 @@
   margin: 0;
   box-sizing: border-box;
   text-decoration: none;
-  font-family: "Inter", sans-serif;
   list-style: none;
   border: none;
 }
@@ -82,30 +81,62 @@ body {
 }
 #home {
   width: 100%;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 55px;
+  position: relative;
+  overflow: hidden;
 }
 
-/* div contenedor de la imagen grande y el h2  */
+/* div contenedor de las imagenes */
 .imgHome {
   margin-top: 50px;
   min-height: 100vh;
-  width: 90%;
+  width: 400%;
   background-image: url(./assets/img/img1.png);
   background-size: cover;
   background-position: center;
   display: flex;
-  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 15px 15px 10px var(--naranja);
 }
 
+/* cada imagen del carrousel  */
+.imgHome img {
+  width: 25%;
+  flex-shrink: 0;
+}
+
+.carrusel-botones {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px;
+  position: absolute;
+  bottom: 300px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.anterior,
+.siguiente {
+  border-radius: 10px;
+  background-color: var(--amarillo);
+  color: var(--blanco);
+  font-size: 1.3rem;
+  font-weight: 400;
+  padding: 1px 20px;
+  cursor: pointer;
+  border: var(--blanco) solid 1px;
+}
+.anterior:hover,
+.siguiente:hover {
+  transform: scale(0.9);
+  transition: 500ms;
+  border: none;
+}
 /* h2 dentro de la imagen principal  */
 .imgHome h2 {
   margin-top: 20px;
   color: var(--amarillo);
-  font-family: "Bebas Neue", cursive;
+  font-family: "Bebas Neue";
   letter-spacing: 3px;
   font-size: 5rem;
   text-align: center;
@@ -130,7 +161,7 @@ body {
 }
 #products h4 {
   color: var(--blanco);
-  font-size: 2.6rem;
+  font-size: 3rem;
   letter-spacing: 2px;
   font-family: "Bebas Neue", cursive;
 }
@@ -153,6 +184,12 @@ body {
   justify-content: space-between;
   align-items: center;
   background-color: hsl(32, 100%, 49%, 0.3);
+  cursor: pointer;
+  box-shadow: 7px 7px 5px var(--naranja);
+}
+.card:hover {
+  transform: scale(1.04);
+  transition: 700ms;
 }
 .imgCard {
   width: 130px;
